@@ -1,0 +1,50 @@
+/* this will apply to everything */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the body */
+body {
+    color: #102B3F;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styles the header */
+header {
+    padding: 20px 35px;
+    background-color: #6A7B76
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #051014;
+    margin: 0;
+}
+
+header a { 
+    text-decoration: none;
+    color: #051014;
+}
+
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #051014;
+    margin: 0;
+    display: inline;
+}
