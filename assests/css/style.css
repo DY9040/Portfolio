@@ -1,31 +1,38 @@
+:root{
+    --primary-color: #102B3F;
+    --secondary-color: #051014;
+    --tertiary-color: #6A7B76;
+    --quaternary-color: #
+}
 /* this will apply to everything */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* styling the body */
 body {
-    color: #102B3F;
+    color: var(--primary-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Styles the header */
 header {
     padding: 20px 35px;
-    background-color: #6A7B76
+    background-color: var(--tertiary-color);
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #051014;
+    color: var(--secondary-color);
     margin: 0;
 }
 
 header a { 
     text-decoration: none;
-    color: #051014;
+    color: var(--secondary-color);
 }
 
 header nav{
@@ -44,7 +51,50 @@ header nav ul li a {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #051014;
+    color: var(--secondary-color);
     margin: 0;
     display: inline;
+}
+/* End header styles */
+
+/* Styles for the footer */
+footer {
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer h2 {
+    display: inline;
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+/* End footer style */
+.hero {
+    background-image: url('../images/hero-port.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color:var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
