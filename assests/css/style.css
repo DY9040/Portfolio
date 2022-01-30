@@ -195,7 +195,8 @@ padding: 100px 0;
     height: 360px;
 }
 #about .right {
-    width: 100%;
+    width: 500px;
+    margin:auto
 }
 #about .right h2 {
     font-size: 1.5rem;
@@ -220,16 +221,18 @@ padding: 100px 0;
     margin: 0 auto;
 }
 #contact .contact-items{
-    width: 70%;
+    width: 60%;
+    padding-left: 3%;
 }
 #contact .contact-item {
-    width: 80%;
+    width: 90%;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
     margin: 30px;
     display: flex;
+    flex: 1  0 auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -274,3 +277,118 @@ padding: 100px 0;
 }
 /* footer ends*/
 
+/* @Media Query for smaller desktop and smaller*/
+@media screen and (max-width: 980px) {
+/* this will be applies on any screen smaller than 980px */
+.contact-container{
+    align-items: center;
+}
+.contact-items .contact-item {
+    align-items: center;
+}
+.section-title h1{
+    align-items: center;
+
+}
+}
+/* @Media Query for smaller desktop and smallerENDS*/
+
+/* @Media Query for tablets and smaller*/
+@media screen and (min-width: 768px) {
+    /* this will be applied on any screen between 768px and 575 px*/
+.cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+}
+h1.section-title {
+    font-size: 6rem;
+}
+.hero h1 {
+    font-size: 7rem;
+}
+
+#projects .project-item {
+    height: 200;
+    margin: 0;
+    width: 100%;
+}
+#projects .all-projects .project-info {
+    height: 100%;
+}
+
+#about .about {
+    flex-direction: row;
+}
+#about .left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+}
+#about .right {
+    text-align: left;
+    padding: 30px;
+}
+#about .right h1 {
+    text-align: left;
+}
+#contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+.contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+}
+.contact-item {
+    margin: 20px;
+    flex-direction: row;
+}
+.contact-item .icon {
+    height: 100px;
+    width: 100px;
+}
+.contact-item .icon img {
+    object-fit: contain;
+}
+
+}
+/* @Media Query for tablets and smaller ENDS*/
+
+
+/* @Media Query for Mobile Phones and smaller*/
+@media screen and (max-width: 575px){
+    /* this will be applied on any screen smaller than 575*/
+
+.cta {
+    width: 100%;
+}
+.contact-item  {
+    flex: 0 100%;
+}
+#about .about {
+    flex-direction: row;
+}
+#about .left {
+    width: 400px;
+    height: 200px;
+    padding-left: 40px;
+}
+#about .right {
+    text-align: left;
+    padding: 10px;
+}
+#about .right h1 {
+    text-align: left;
+    
+}
+.runbuddy-link:after {
+    background-image: url("../images/Run-buddy-small.JPG");
+}
+}
+/* @Media Query for Mobile Phones and smaller ENDS*/
