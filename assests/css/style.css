@@ -57,6 +57,11 @@ text-align: center;
 color: #fff;
 background-color: crimson;
 }
+.creator h1 {
+font-size: 3rem;
+text-transform: uppercase;
+color: #fff;
+}
 /* Hero section */
 #hero{
     background-image: url(../images/hero-port.jpg);
@@ -120,7 +125,7 @@ padding: 100px 0;
 }
 #projects .project-info {
     padding: 30px;
-    flex-basis: 50%;
+    flex: 1  0 auto;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -142,26 +147,39 @@ padding: 100px 0;
     color: #fff;
 }
 #projects .project-img {
-    flex-basis: 50%;
+    flex: 1 0 auto;
     height: 300px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
-#projects .project-img:after {
-    content: '';
+
+#projects .project-image img {
+    transition: all 500ms;
+}
+#projects .project-item:hover img {
+    transform: scale(1.1);
+}
+.runbuddy-link {
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 500ms;
+}
+.runbuddy-link:after {
     position: absolute;
+    content: "";
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: .7;
+    background-image: url("../images/Run-buddy.JPG");
+    background-size: cover;
 }
-#projects .project-image img {
-    transition: .3s ease transform;
-}
-#projects .project-item:hover .project-img img {
+.runbuddy-link:hover {
     transform: scale(1.1);
 }
+
 /*projects section ends */
 
 /* About me section */
@@ -233,5 +251,26 @@ padding: 100px 0;
     font-weight: 500;
 }
 /* Contact Me section ends*/
-
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+.footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.footer h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer p {
+    color: #fff;
+    font-size: 1.5em;
+}
+/* footer ends*/
 
