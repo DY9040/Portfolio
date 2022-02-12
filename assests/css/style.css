@@ -228,7 +228,26 @@ padding: 100px 0;
 .runbuddy-link:hover {
     transform: scale(1.1);
 }
+.chessmaster-link {
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 500ms;
+}
 
+.chessmaster-link:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Chessmaster.JPG");
+    background-size: cover;
+}
+.chessmaster-link:hover {
+    transform: scale(1.1);
+}
 /*projects section ends */
 
 /* About me section */
@@ -438,6 +457,9 @@ h1.section-title {
 }
 .runbuddy-link:after {
     background-image: url("../images/Run-buddy-small.JPG");
+}
+.chessmaster-link::after {
+    background-image: url("../images/Chessmaster-small.JPG");
 }
 }
 /* @Media Query for Mobile Phones and smaller ENDS*/
