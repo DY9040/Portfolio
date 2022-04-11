@@ -248,6 +248,26 @@ padding: 100px 0;
 .chessmaster-link:hover {
     transform: scale(1.1);
 }
+.aniverse-link {
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 500ms;
+}
+
+.aniverse-link:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/aniverse.PNG");
+    background-size: cover;
+}
+.aniverse-link:hover {
+    transform: scale(1.1);
+}
 /*projects section ends */
 
 /* About me section */
